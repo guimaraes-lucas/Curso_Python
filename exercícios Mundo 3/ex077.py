@@ -17,8 +17,8 @@ for vogais in range(0, len(palavras)):
     print('-'*40)
 """
 
-for vogais in palavras:
-    print(f'\nNa palavra {vogais} temos: ', end='')
-    for letra in vogais:
+for palavra in palavras:
+    print(f'\nNa palavra {palavra} temos: ', end='')
+    for letra in palavra:
         if letra.lower() in 'aeiou':
             print(letra, end=' ')
