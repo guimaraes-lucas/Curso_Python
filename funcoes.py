@@ -44,3 +44,31 @@ def dobra(lista):
 valores = [1,2,3,4,5,6]
 dobra(valores)
 print(valores)
+
+
+help(print)             # Mostra uma explicação do termo em questão
+print(print.__doc__)    # Abre a documentação do termo em questão
+
+
+#Criando DocStrings
+def contar(inicio, fim, passo):
+    """
+    :param inicio: É o início da contagem
+    :param fim: É o fim da contagem
+    :param passo: É o passo da contagem
+    :return: Não tem retorno
+    """
+    while inicio <= fim:
+        print(f'{inicio} ', end='')
+        inicio += passo
+    print('FIM!')
+
+help(contar)
+
+contar(2,10,2)
+
+
+# Parâmetros Opcionais
+def somar(a,b,c=0):
+    s = a+b+c
+    print(f'A soma vale {s}')
