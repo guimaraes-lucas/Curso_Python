@@ -4,11 +4,15 @@
 from math import factorial
 
 num = int(input('Digite o número para calcular seu fatorial: '))
+
 contador = num
 fatorial = factorial(num)
-print('Calculando {}! = '.format(num), end='')
+
+print(f'Calculando {num}! = ', end='')
+
 while contador > 0:
-    print('{}'.format(contador), end='')
+    print(f'{contador}', end='')
     print(' x ' if contador > 1 else ' = ', end='')
     contador -= 1
+
 print(fatorial)
