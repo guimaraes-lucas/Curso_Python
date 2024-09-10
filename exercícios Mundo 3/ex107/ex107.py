@@ -2,7 +2,7 @@
     Crie um módulo chamado MOEDA.PY que tenha as funções incorporadas AUMENTAR(), DIMINUIR(), DOBRO() e METADE(). Faça
 também um programa que IMPORTE esse módulo e use algumas dessas funções.
 """
-from uteis import moedas
+import moedas
 
 valor = float(input('Digite o preço: R$  '))
 
