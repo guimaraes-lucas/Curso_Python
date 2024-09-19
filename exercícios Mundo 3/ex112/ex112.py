@@ -7,5 +7,6 @@ valores que sejam MONETÁRIOS.
 from utilidadesCeV import dados
 from utilidadesCeV import moeda
 
-valor = dados.leiaDinheiro('Digite o valor: R$ ')
+valor = dados.leiaDinheiro('Digite o valor: R$ ') 
 moeda.resumo(valor, 80, 20)
+ 
